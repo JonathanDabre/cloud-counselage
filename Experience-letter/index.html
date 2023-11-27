@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
     <style>
 /*
 ! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
@@ -524,6 +525,15 @@ video {
   margin-left: -0.25rem;
   margin-right: -0.25rem;
 }
+.mt-12 {
+  margin-top: 3rem;
+}
+.mt-14 {
+  margin-top: 3.5rem;
+}
+.mt-16 {
+  margin-top: 4rem;
+}
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -545,6 +555,9 @@ video {
 .h-\[110px\] {
   height: 110px;
 }
+.h-\[1162px\] {
+  height: 1162px;
+}
 .h-\[1232px\] {
   height: 1232px;
 }
@@ -553,6 +566,9 @@ video {
 }
 .w-48 {
   width: 12rem;
+}
+.w-56 {
+  width: 14rem;
 }
 .w-\[100\%\] {
   width: 100%;
@@ -650,6 +666,10 @@ video {
   font-size: 1.5rem;
   line-height: 2rem;
 }
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -675,6 +695,10 @@ video {
   --tw-text-opacity: 1;
   color: rgb(39 55 85 / var(--tw-text-opacity));
 }
+.text-blue-700 {
+  --tw-text-opacity: 1;
+  color: rgb(29 78 216 / var(--tw-text-opacity));
+}
 .text-gray-700 {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
@@ -687,10 +711,9 @@ video {
         }
     </style>
 </head>
-<body class="w-[870px] h-[1232px] bg-slate-100">
+<body class="w-[870px] h-[1162px] bg-slate-100">
   <!-- width = 826px height = 1169 -->
-  <div class="container pt-2  px-[70px] w-[870px] h-[1232px] bg-white">
-
+  <div class="container pt-2  px-[70px] w-[870px] h-[1162px] bg-white">
       <div class="letter-header w-[100%] h-[110px]">
           <div class="cc-brand  pb-3 border border-b-1 border-l-0 border-r-0 border-t-0 border-black ">
               <span class="brand-item inline-block align-bottom w-[40%] mt-3">
@@ -703,83 +726,51 @@ video {
           </div>
                      
       </div>
-      <center class="confidential flex flex-row justify-around mt-3">
+
+     
+      <center class="confidential flex flex-row justify-around mt-16">
           <div class="confidential-item">
-              <span class=" text-xl font-bold underline">CONFIDENTIAL</span>
+              <span class=" text-lg font-bold underline">EXPERIENCE LETTER</span>
+          </div>
+      </center>
+      <center class="confidential flex flex-row justify-around mt-12">
+          <div class="confidential-item">
+              <span class=" text-md font-bold underline">To Whomsoever It May Concern </span>
           </div>
       </center>
 
       <div class="date pt-12">
           Date: {{DATEISSUED}}
       </div>
-      <div class="senders-address mt-6">
-          <p>To,</p>
-          <p class="font-bold">{{LEARNERNAME}}</p>
-          
-      </div>
-      <div class="subject mt-6">
-          <p class="font-bold"><span>Subject:</span> <span class="underline">Internship Appointment Letter</span></p>
-      </div>
-      <div class="salutation mt-4">
-          <p>Dear <span class="font-bold">{{LEARNERNAME}},</span></p>
-      </div>
       
       <div class="paragraph-1 mt-4">
-          <p class="text-justify">This letter is to confirm your internship with <span class="font-bold">Cloud Counselage Pvt. Ltd.</span> under our <span class="font-bold">‘Internship Program’ </span> in association with our <span class="font-bold">Gift-A-Career Foundation</span>.</p>
-      </div>
-
-      <div class="conditions-table mt-4 w-[440px] ">
-          <div class="row  ">
-              <span class="col w-[215px] px-2 inline-block  border border-1 border-black">Start Date</span>
-              <span class="col w-[215px] -m-1 inline-block px-2 font-bold  border border-1 border-black border-l-0 ">{{DATEISSUED}}</span>
-          </div>
-          <div class="row ">
-              <span class="col w-[215px] px-2 inline-block border border-1 border-black border-t-0">Intern ID</span>
-              <span class="col w-[215px] -m-1 inline-block px-2 font-bold border border-1 border-black border-l-0 border-t-0">{{SERIALNUMBER}}</span>
-          </div>
-          <div class="row ">
-              <span class="col w-[215px] px-2 inline-block  border border-1 border-black border-t-0">Position</span>
-              <span class="col w-[215px] -m-1 inline-block px-2 border font-bold border-1 border-black border-l-0 border-t-0">Intern</span>
-          </div>
-          <div class="row ">
-              <span class="col w-[215px] px-2 inline-block border border-1 border-black border-t-0">Internship Duration</span>
-              <span class="col w-[215px] -m-1 inline-block px-2 border border-1 font-bold border-black border-l-0 border-t-0">Min. 240 hours</span>
-          </div>
-          <div class="row ">
-              <span class="col w-[215px] px-2 inline-block border border-1 border-black border-t-0">Location</span>
-              <span class="col w-[215px]  -m-1  inline-block px-2 border border-1 font-bold border-black border-l-0 border-t-0">Online (Remote)</span>
-          </div>
-          
-          
+              <p class="text-justify">This letter is to certify that <span class="font-bold">{{LEARNERNAME}}</span>  has successfully completed internship with <span class="font-bold">Cloud Counselage Pvt. Ltd.</span>  under our <span class="font-bold">'Internship Program'</span> in association with our <span class="font-bold">Gift-A-Career Foundation</span> for a duration of <span class="font-bold">240 hours</span>. </p>
       </div>
 
       <div class="paragraph-2 mt-4">
-          <p class="text-justify">During your engagement with us, you are required to attend all the industry training sessions and submit the respective project deliverables, to get an overall understanding of the domain selected by you. This appointment would not attract any remuneration and would be on an experience basis only.</p> 
+          <p class="text-justify">During this engagement, <span class="font-bold">{{LEARNERNAME}}</span> has abided by the company policies, attended various industry-specific training sessions, and successfully submitted <span class="font-bold">{{COURSENAME}}</span> project deliverables by following the best practices and project management practices.  </p> 
       </div>
 
       <div class="paragraph-3 mt-4">
-          <p class="text-justify">Your engagement will be governed by the policies of Cloud Counselage Pvt. Ltd. You must ensure that you abide by the company policies and carry out your activities in such a manner that the company is in no way prejudiced.</p>
-      </div>
-      <div class="paragraph-3 mt-4">
-          <p class="text-justify">Please note that this letter signifies only the appointment and not the completion of the engagement. We shall provide an experience certificate/letter upon the successful completion of this engagement.</p>
+          <p class="text-justify">Throughout the internship <span class="font-bold">{{LEARNERNAME}}</span> has worked ethically, followed the instructions, performed necessary research, and worked with minimum supervision. The delivery of the project demonstrates their domain knowledge and skills, a structured approach to problem solving, ability to follow instructions, and inclination to work hard.   
+          </p>
       </div>
 
       <div class="paragraph-4 mt-4">
-          <p>Looking forward to working with you.</p>
+          <p>This association has been beneficial for us, and we wish <span class="font-bold">{{LEARNERNAME}}</span> all the success in their future endeavours. </p>
       </div>
 
-      <div class="for-company mt-6">
+      <div class="for-company mt-14">
           <p><span class="font-serif">For</span> <span class="font-bold">CLOUD COUNSELAGE PVT. LTD.,</span></p>
       </div>
       <div class="sign-stamp">
-          <img src="https://i.ibb.co/9vWwRj7/harshada-sign-crop.png" class="w-48" alt="">
+          <img src="https://i.ibb.co/B2pB4sG/Screenshot-2023-11-06-230107.png" class="w-56" alt="">
       </div>
       <div class="harshada-director font-bold">
-          <p>Harshada Topale</p>
-          <p>Director</p>
+          <p>Subhi Shildhankar  </p>
+          <p>Co-Founder & Director (HR) </p>
       </div>
-      <div class="last-line text-xs text-center text-gray-700 pt-3 italic">This appointment letter is valid subject to the verification of submitted documents</div>
-
+      <div class="last-line text-xs text-center text-gray-700 pt-3 italic mt-16"> For background verification please write to <a href="mailto:hr@cloudcounselage.com" class="text-blue-700 underline">hr@cloudcounselage.com</a> </div>
 
       <div class="address-footer pt-5 w-[100%] border border-black border-t-1 border-b-0 border-l-0 border-r-0  mt-2">
           <div class="address-footer-content text-gray-700 ">
@@ -790,6 +781,7 @@ video {
           </div>
 
       </div>
+
 
   </div>
   
